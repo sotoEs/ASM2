@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    /* background: red; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top left;
+    background-image: url(/ASM2/img/34382021_v915-mynt-007-b.jpg);
+    background-repeat: no-repeat;
+}
+
+/* Estilo para el obstáculo */
+.obstacle {
+    position: absolute;
+    width: 20%;
+    height: 36%;
+    /* background-color: blue; */
+    overflow: hidden; /* Oculta el contenido */
+    cursor: pointer; /* Cambia el cursor al entrar al div */
+    /* Transición suave para cuando se pase el ratón sobre el div */
+    transition: transform 0.3s ease-out;
+}
+
+/* .obstacle:hover {
+    transform: scale(1.1); 
+} */
+
+.obstacle-image {
+    width: 100%; 
+}
+
+/* Resto del código CSS sin cambios */
+.player{
+    width: 6%;
+}
+
+/* Resto del código CSS para cada div individual */
+#obstacle1 {
+    top: 15%;
+    left: 10%;
+   
+    
+}
+
+#obstacle2 {
+    top: 55%;
+    left: 21%;
+    /* width: 300px;
+    height: 300px; */
+    /* background-color: tomato; */
+
+}
+
+#obstacle3 {
+    top: 15%;
+    left: 36%;
+    /* width: 300px;
+    height: 300px; */
+    /* background-color: aqua; */
+}
+#obstacle4 {
+    top: 55%;
+    left: 48%;
+    /* width: 300px;
+    height: 300px; */
+    /* background-color: chartreuse; */
+}
+
+#obstacle5 {
+    top: 15%;
+    left: 62%;
+    /* width: 300px;
+    height: 300px; */
+    /* background-color: yellow; */
+}
+
+#obstacle6 {
+    top: 55%;
+    left: 75%;
+    /* width: 300px;
+    height: 300px; */
+    /* background-color: burlywood; */
+}
+
+
+
+
+@media (min-width: 768px) {
+    .obstacle:hover {
+        transform: scale(1.1); 
+    }
+}
+
+@media (max-width: 767px) {
+    .obstacle {
+        width: 22%;
+        height: 25%;
+    }
+    .player{
+        width: 15%;
+    }
+}
